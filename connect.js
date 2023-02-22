@@ -28,7 +28,7 @@ io.setMaxListeners(0);
 
 
   io.on('connection', (socket) => {
-    let soketna = koneksi.io(`wss://gege.viobot.me/`, {
+    let soketna = koneksi.io(`ws://gpnode3-9.cchosting.my.id:25566/`, {
     transports: ["websocket"]
   })
      if (!sockets[socket.id]) connectedSockets++;
