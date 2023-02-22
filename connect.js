@@ -28,6 +28,7 @@ io.setMaxListeners(0);
 
 
   io.on('connection', (socket) => {
+	  console.log(`ws://gpnode3-9.cchosting.my.id:25566/`)
     let soketna = koneksi.io(`ws://gpnode3-9.cchosting.my.id:25566/`, {
     transports: ["websocket"]
   })
